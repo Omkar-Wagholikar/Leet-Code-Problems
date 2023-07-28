@@ -1,6 +1,10 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
+
+// https://leetcode.com/problems/permutations/description/
+
+
 public class PermutationsI {
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> finVal = new ArrayList<>();
