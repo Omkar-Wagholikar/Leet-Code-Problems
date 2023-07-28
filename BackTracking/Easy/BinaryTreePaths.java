@@ -1,4 +1,3 @@
-package Trees;
 // https://leetcode.com/problems/binary-tree-paths/description/
 import java.util.*;
 
@@ -20,6 +19,9 @@ public class BinaryTreePaths {
 
     public static List<String> binaryTreePaths(TreeNode root) {
         String t = "" + root.val;
+        if(root.left == null && root.right == null){
+            fin.add(t);
+        }
         inorder(root.left, t);
         inorder(root.right, t);
         return fin;
@@ -37,10 +39,10 @@ public class BinaryTreePaths {
     }
     public static void main(String [] args){
         TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.left.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.right = new TreeNode(5);
+        // root.left = new TreeNode(2);
+        // root.left.right = new TreeNode(3);
+        // root.left.left = new TreeNode(4);
+        // root.right = new TreeNode(5);
         System.out.println(binaryTreePaths(root));
     }
 }
