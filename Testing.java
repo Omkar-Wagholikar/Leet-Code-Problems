@@ -1,6 +1,4 @@
-import java.util.*;
-
-class Solution {
+    class Solution {
 
 }
 public class Testing {
