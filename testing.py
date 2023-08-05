@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/max-consecutive-ones/
+
 class Solution:
     def findMaxConsecutiveOnes(self, nums: list[int]) -> int:
         mcount =0
@@ -5,11 +7,13 @@ class Solution:
         for n in nums:
             if n == 1:
                 count += 1
-                mcount = max(mcount, count)
+                if count > mcount:
+                    mcount = count
             else:
-                mcount = max(mcount, count)
+                if count > mcount:
+                    mcount = count
                 count = 0
         return mcount
 
-a = Solution()
-print(a.findMaxConsecutiveOnes([1,0,1,1,0,1]))
+# a = Solution()
+# print(a.findMaxConsecutiveOnes([1,0,1,1,0,1]))
