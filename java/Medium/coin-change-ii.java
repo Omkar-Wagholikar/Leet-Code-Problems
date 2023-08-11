@@ -20,11 +20,11 @@ class Solution {
     }
 }
 
-public class Testing{
-    public static void main(String [] atgs){
-        Solution a = new Solution();
-        int coins[] = new int[]{1,2,5};
-        int amount =5;
-        System.out.println(a.change(amount, coins));
-    }
-}
+// public class Testing{
+//     public static void main(String [] atgs){
+//         Solution a = new Solution();
+//         int coins[] = new int[]{1,2,5};
+//         int amount =5;
+//         System.out.println(a.change(amount, coins));
+//     }
+// }

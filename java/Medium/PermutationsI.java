@@ -9,7 +9,6 @@ public class PermutationsI {
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> finVal = new ArrayList<>();
         List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toList());
-
         addRep(list, 0, finVal, true);
         return finVal;
     }
@@ -40,7 +39,7 @@ public class PermutationsI {
     }
     public static void main(String [] args){
         int[] nums = new int[] {1, 2, 3, 4};
-        permute(nums);
+        System.out.println(permute(nums));
     }
 }
 
