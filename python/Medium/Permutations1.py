@@ -6,7 +6,7 @@ class Solution(object):
         self.fun(temp, nums, [])
         return temp
 
-    def fun(self, finL, a, _stack):
+    def fun(self, finL:list, a, _stack:list):
         stack = _stack[:]
         b = a[:]
         if len(stack) == len(a):
@@ -19,3 +19,6 @@ class Solution(object):
                 stack.append(b[i])
                 self.fun(finL,a,stack)
                 stack.pop()
+
+a = Solution()
+print(a.permute([1,2,3,4]))
